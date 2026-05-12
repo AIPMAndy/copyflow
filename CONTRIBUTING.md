@@ -1,6 +1,6 @@
-# Contributing to PostSkill
+# Contributing to CopyFlow
 
-感谢你对 PostSkill 的兴趣！
+感谢你对 CopyFlow 的兴趣！
 
 ## 如何贡献
 
@@ -14,8 +14,8 @@
 
 ```bash
 # 克隆仓库
-git clone https://github.com/AIPMAndy/postskill.git
-cd postskill
+git clone https://github.com/AIPMAndy/copyflow.git
+cd copyflow
 
 # 创建虚拟环境
 python -m venv venv

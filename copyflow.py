@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-PostSkill - 端到端图文批量生产与自动发布工具
+CopyFlow - 端到端图文批量生产与自动发布工具
 主入口 CLI - v3.0 Self-Evolution 版本
 """
 
@@ -20,7 +20,7 @@ from scripts.concurrency_control import ConcurrencyController, ProgressBar
 @click.group()
 @click.version_option(version="3.0.0")
 def cli():
-    """PostSkill v3.0 - Self-Evolution AI 内容生产引擎
+    """CopyFlow v3.0 - Self-Evolution AI 内容生产引擎
     
     \b
     🚀 新特性：
@@ -32,7 +32,7 @@ def cli():
     
     \b
     快速开始：
-      python postskill.py run --topic "AI 如何改变内容创作"
+      python copyflow.py run --topic "AI 如何改变内容创作"
     
     \b
     环境变量：
@@ -61,25 +61,25 @@ def run(topic, count, max_length, output, model, resolution, aspect_ratio, dry_r
     \b
     示例：
       # 生成 5 套内容（默认）
-      python postskill.py run --topic "AI 如何改变内容创作"
+      python copyflow.py run --topic "AI 如何改变内容创作"
       
       # 生成 10 套内容，使用 GPT-4
-      python postskill.py run -t "个人成长" -c 10 -m gpt-4o
+      python copyflow.py run -t "个人成长" -c 10 -m gpt-4o
       
       # 测试模式（不实际生成图片）
-      python postskill.py run -t "测试主题" --dry-run
+      python copyflow.py run -t "测试主题" --dry-run
       
       # 并发生成（小心 API 限流）
-      python postskill.py run -t "AI 创作" -c 10 --concurrent 2 --rate-limit 2.0
+      python copyflow.py run -t "AI 创作" -c 10 --concurrent 2 --rate-limit 2.0
       
       # 🔥 对抗式生成（高质量模式）
-      python postskill.py run -t "AI 创作" --adversarial
+      python copyflow.py run -t "AI 创作" --adversarial
       
       # 对抗式 + 自定义迭代
-      python postskill.py run -t "AI 创作" --adversarial --iterations 5
+      python copyflow.py run -t "AI 创作" --adversarial --iterations 5
     """
     print(f"\n{'='*60}")
-    print(f"🚀 PostSkill v3.0 - Self-Evolution AI 内容生产引擎")
+    print(f"🚀 CopyFlow v3.0 - Self-Evolution AI 内容生产引擎")
     print(f"{'='*60}")
     print(f"\n📋 配置信息：")
     print(f"   主题: {topic}")
@@ -218,12 +218,12 @@ def run(topic, count, max_length, output, model, resolution, aspect_ratio, dry_r
         print(feedback_system.generate_report())
     else:
         print("暂无历史反馈数据")
-        print("\n💡 提示：使用 `postskill.py feedback` 命令对生成结果打分")
+        print("\n💡 提示：使用 `copyflow.py feedback` 命令对生成结果打分")
         print("   AI 会根据你的反馈自动优化生成质量")
     
     # 总结
     print(f"\n{'='*60}")
-    print("✅ PostSkill 执行完成!")
+    print("✅ CopyFlow 执行完成!")
     print(f"{'='*60}")
     print(f"\n📊 生成统计：")
     print(f"   文案数量: {len(copies)}")
@@ -237,7 +237,7 @@ def run(topic, count, max_length, output, model, resolution, aspect_ratio, dry_r
     print(f"   {doc_result['markdown_file']}")
     print(f"\n💡 下一步：")
     print(f"   1. 查看 {doc_result['markdown_file']} 审核内容")
-    print(f"   2. 使用 `postskill.py feedback` 对结果打分")
+    print(f"   2. 使用 `copyflow.py feedback` 对结果打分")
     print(f"   3. AI 会根据反馈自动优化（Self-Evolution）")
     print()
 
@@ -249,16 +249,16 @@ def feedback(output):
     
     \b
     示例：
-      python postskill.py feedback --output ./output
+      python copyflow.py feedback --output ./output
     """
     print(f"\n{'='*60}")
-    print("📊 PostSkill 质量反馈系统")
+    print("📊 CopyFlow 质量反馈系统")
     print(f"{'='*60}\n")
     
     # 加载文案
     copies_file = Path(output) / 'copies.json'
     if not copies_file.exists():
-        print("❌ 未找到文案文件，请先运行 `postskill.py run`")
+        print("❌ 未找到文案文件，请先运行 `copyflow.py run`")
         return
     
     with open(copies_file, 'r', encoding='utf-8') as f:
@@ -347,7 +347,7 @@ def report(output):
     
     \b
     示例：
-      python postskill.py report --output ./output
+      python copyflow.py report --output ./output
     """
     feedback_system = QualityFeedbackSystem(feedback_dir=f"{output}/feedback")
     print(feedback_system.generate_report())
@@ -357,7 +357,7 @@ def report(output):
 def config():
     """查看配置信息"""
     print("\n" + "="*60)
-    print("PostSkill v3.0 配置信息")
+    print("CopyFlow v3.0 配置信息")
     print("="*60)
     
     print("\n🔑 环境变量:")
@@ -382,8 +382,8 @@ def config():
     print("\n💡 提示:")
     print("  1. 设置环境变量: export OPENAI_API_KEY=your_key")
     print("  2. 安装依赖: pip install -r requirements.txt")
-    print("  3. 运行测试: python postskill.py run --topic '测试' --dry-run")
-    print("  4. 查看文档: https://github.com/AIPMAndy/postskill")
+    print("  3. 运行测试: python copyflow.py run --topic '测试' --dry-run")
+    print("  4. 查看文档: https://github.com/AIPMAndy/copyflow")
     print()
 
 

@@ -1,11 +1,11 @@
-# PostSkill 开发指南
+# CopyFlow 开发指南
 
 ## 🚀 快速开始
 
 ```bash
 # 1. 克隆仓库
-git clone https://github.com/AIPMAndy/postskill.git
-cd postskill
+git clone https://github.com/AIPMAndy/copyflow.git
+cd copyflow
 
 # 2. 初始化开发环境
 make setup
@@ -115,10 +115,10 @@ feat: 添加小红书发布功能
 ### 本地调试发布流程
 ```bash
 # 使用 dry-run 模式（不实际发布）
-python postskill.py run --topic "测试" --platforms wechat --dry-run
+python copyflow.py run --topic "测试" --platforms wechat --dry-run
 
 # 详细日志
-python postskill.py run --topic "测试" -v
+python copyflow.py run --topic "测试" -v
 ```
 
 ### 检查 GitHub Actions
@@ -170,5 +170,5 @@ pytest tests/ -v  # Mock 测试不需要真实 Key
 
 ## 📞 帮助
 
-- Issues: https://github.com/AIPMAndy/postskill/issues
-- Actions: https://github.com/AIPMAndy/postskill/actions
+- Issues: https://github.com/AIPMAndy/copyflow/issues
+- Actions: https://github.com/AIPMAndy/copyflow/actions

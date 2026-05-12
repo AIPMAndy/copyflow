@@ -1,9 +1,9 @@
 ---
-name: postskill
+name: copyflow
 description: End-to-end content production workflow skill for generating multiple copy variants, creating matching images, organizing review-ready materials, and automating downstream publishing steps. Use when the user wants to turn a topic into reusable social content assets, batch content materials, or a semi-automated publishing pipeline.
 ---
 
-# PostSkill
+# CopyFlow
 
 Use this skill to turn a single topic into a small content production workflow.
 
@@ -42,27 +42,27 @@ Do not claim capabilities that the codebase does not actually implement.
 
 ### Full pipeline
 ```bash
-python postskill.py run --topic "Your Topic"
+python copyflow.py run --topic "Your Topic"
 ```
 
 ### Copy only
 ```bash
-python postskill.py generate --topic "Your Topic" --output ./output
+python copyflow.py generate --topic "Your Topic" --output ./output
 ```
 
 ### Images only
 ```bash
-python postskill.py generate-images --config ./output/copies.json --output ./output/images
+python copyflow.py generate-images --config ./output/copies.json --output ./output/images
 ```
 
 ### Review material document
 ```bash
-python postskill.py create-doc --content ./output/copies.json --images ./output/images --output ./output
+python copyflow.py create-doc --content ./output/copies.json --images ./output/images --output ./output
 ```
 
 ## Important guidance
 
-- Present PostSkill as a content pipeline, not as a finished all-platform publishing SaaS.
+- Present CopyFlow as a content pipeline, not as a finished all-platform publishing SaaS.
 - Be explicit about which parts are production-ready vs scaffolded.
 - Prefer accurate claims over impressive claims.
 - When describing outcomes, separate implemented behavior from roadmap behavior.
