@@ -98,3 +98,5 @@ RELEASE_LOG = []
 | 2026-05-11 12:14 | ✅ SUCCESS | AI醒觉社 | 微信、小红书 | [查看日志](https://github.com/AIPMAndy/postskill/actions/runs/25669366096) |
 
 | 2026-05-12 11:24 | ✅ SUCCESS | AI醒觉社 | 微信、小红书 | [查看日志](https://github.com/AIPMAndy/postskill/actions/runs/25731214253) |
+
+| 2026-05-14 11:17 | ✅ SUCCESS | AI醒觉社 | 微信、小红书 | [查看日志](https://github.com/AIPMAndy/copyflow/actions/runs/25857024746) |
