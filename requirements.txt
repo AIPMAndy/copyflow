@@ -1,7 +1,7 @@
 # PostSkill 依赖
 
 # 核心依赖
-click>=8.3.3
+click>=8.4.0
 openai>=2.32.0
 ponyflash>=0.2.2
 requests>=2.33.1
