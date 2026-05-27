@@ -122,3 +122,5 @@ RELEASE_LOG = []
 | 2026-05-24 10:44 | ✅ SUCCESS | AI醒觉社 | 微信、小红书 | [查看日志](https://github.com/AIPMAndy/copyflow/actions/runs/26359059781) |
 
 | 2026-05-25 12:35 | ✅ SUCCESS | AI醒觉社 | 微信、小红书 | [查看日志](https://github.com/AIPMAndy/copyflow/actions/runs/26400730025) |
+
+| 2026-05-27 12:23 | ✅ SUCCESS | AI醒觉社 | 微信、小红书 | [查看日志](https://github.com/AIPMAndy/copyflow/actions/runs/26510762329) |
