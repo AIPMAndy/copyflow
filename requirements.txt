@@ -1,13 +1,13 @@
 # PostSkill 依赖
 
 # 核心依赖
-click>=8.3.3
-openai>=2.32.0
+click>=8.4.2
+openai>=2.44.0
 ponyflash>=0.2.2
-requests>=2.33.1
+requests>=2.34.2
 
 # 可选依赖
-playwright>=1.58.0
+playwright>=1.61.0
 
 # 开发依赖
 pytest>=7.0.0
