@@ -1,0 +1,195 @@
+# ❓ Frequently Asked Questions
+
+## General Questions
+
+### What is CopyFlow?
+CopyFlow is an open-source content production automation engine that generates multiple style variations of copy plus AI images from a single topic input, saving content teams 80% of repetitive work.
+
+### Who is it for?
+- Content marketers managing multi-platform campaigns
+- Social media managers creating daily posts
+- Copywriters needing style variations
+- Small teams without big content budgets
+- Anyone tired of repetitive content work
+
+### How is this different from ChatGPT?
+ChatGPT requires manual prompting for each style variation. CopyFlow automates the entire workflow: one command generates 10 styles, creates images, and organizes everything into a review document.
+
+### Is it really free?
+Yes, the software is open source and free. You pay only for API usage:
+- OpenAI API: ~$20-50/month for heavy use
+- PonyFlash API: ~$10-30/month (optional, for images)
+
+## Technical Questions
+
+### What are the system requirements?
+- Python 3.10 or higher
+- 2GB RAM minimum
+- Internet connection for API calls
+- macOS, Linux, or Windows
+
+### Do I need coding skills?
+Basic command line knowledge helps, but the quick start guide walks you through everything. If you can run `python script.py`, you're good to go.
+
+### Can I run this offline?
+After initial setup, the core logic runs locally. However, you need internet for:
+- OpenAI API (text generation)
+- PonyFlash API (image generation)
+
+### What AI models does it support?
+- **Text**: GPT-4o, GPT-4o-mini, GPT-4, GPT-3.5-turbo (any OpenAI model)
+- **Images**: PonyFlash SDK (more providers coming soon)
+
+### Can I use other AI providers?
+Currently OpenAI for text and PonyFlash for images. We're adding support for:
+- Anthropic Claude (coming in v3.1)
+- Local models via Ollama (coming in v3.2)
+- More image providers (Stability AI, Midjourney API)
+
+## Usage Questions
+
+### How long does generation take?
+- **Dry run** (no images): ~30 seconds
+- **With images**: ~2-3 minutes for 10 copies
+- **Adversarial mode**: ~5-10 minutes (higher quality)
+
+### How much does API usage cost?
+Typical costs per generation (10 copies + 10 images):
+- Text (GPT-4o-mini): ~$0.05-0.10
+- Images (PonyFlash): ~$0.20-0.50
+- **Total**: ~$0.25-0.60 per batch
+
+Heavy users (100 batches/month) spend ~$30-80/month.
+
+### Can I customize the output styles?
+Yes! Edit `styles/*.json` to:
+- Modify existing style templates
+- Add new styles
+- Remove styles you don't use
+- Customize tone, length, structure
+
+### What languages are supported?
+CopyFlow works in any language OpenAI supports (100+). The UI and docs are in:
+- ✅ English
+- ✅ 简体中文
+- 🚧 More coming (contributions welcome!)
+
+### Can I integrate this into my workflow?
+Yes! CopyFlow is designed for automation:
+```bash
+# Cron job for daily content
+0 9 * * * cd /path/to/copyflow && python copyflow.py run --topic "$(date +\%F) news"
+
+# CI/CD pipeline
+python copyflow.py run --topic "$TOPIC" --output ./build/content
+```
+
+## Troubleshooting
+
+### "OPENAI_API_KEY not set"
+```bash
+export OPENAI_API_KEY="your-key-here"
+# Add to ~/.zshrc or ~/.bashrc to persist
+```
+
+### "Rate limit exceeded"
+Lower concurrency:
+```bash
+python copyflow.py run --topic "topic" --concurrent 1 --rate-limit 0.5
+```
+
+### Images fail to generate
+- Check PonyFlash API key is set
+- Use `--dry-run` to skip images temporarily
+- Check your PonyFlash account balance
+
+### "ModuleNotFoundError"
+```bash
+pip install -r requirements.txt
+```
+
+### Generation quality is poor
+Try adversarial mode for better results:
+```bash
+python copyflow.py run --topic "topic" --adversarial --iterations 5
+```
+
+## Advanced Questions
+
+### Can I deploy this as a web service?
+Yes! We're working on:
+- Docker deployment guide (v3.1)
+- Web UI (v3.2)
+- API server mode (v3.3)
+
+For now, you can wrap it in Flask/FastAPI yourself.
+
+### Can I contribute?
+Absolutely! See [CONTRIBUTING.md](../CONTRIBUTING.md) for:
+- Code contributions
+- Style template contributions
+- Documentation improvements
+- Translation help
+
+### How do I report bugs?
+[Open an issue](https://github.com/AIPMAndy/copyflow/issues/new?template=bug_report.yml) with:
+- Steps to reproduce
+- Expected vs actual behavior
+- Your environment (OS, Python version)
+- Relevant logs
+
+### How do I request features?
+[Submit a feature request](https://github.com/AIPMAndy/copyflow/issues/new?template=feature_request.yml) explaining:
+- The problem you're trying to solve
+- Your proposed solution
+- Why it would be valuable
+
+### Is there a roadmap?
+Yes! See [RELEASE_LOG.md](../RELEASE_LOG.md) for:
+- What's new in each version
+- Planned features
+- Breaking changes
+
+## Pricing & Licensing
+
+### Is CopyFlow really open source?
+Yes, licensed under Apache 2.0. You can:
+- ✅ Use commercially
+- ✅ Modify the code
+- ✅ Distribute modified versions
+- ✅ Patent grant included
+
+### Can I sell content generated by CopyFlow?
+Yes, you own all generated content. No attribution required.
+
+### Can I offer CopyFlow as a service?
+Yes, but:
+- Keep the Apache 2.0 license notice
+- Don't misrepresent as your own creation
+- Consider contributing improvements back
+
+## Community
+
+### Where can I get help?
+- 💬 [GitHub Discussions](https://github.com/AIPMAndy/copyflow/discussions) - Best for questions
+- 🐛 [Issues](https://github.com/AIPMAndy/copyflow/issues) - For bug reports
+- 📧 [Email] - For private inquiries
+
+### How can I stay updated?
+- ⭐ Star the repo for updates
+- 👁️ Watch releases
+- 🐦 Follow [@AIPMAndy](https://twitter.com/aipmand y) on Twitter
+
+### Can I hire you for custom work?
+Yes! For:
+- Custom integrations
+- Private deployments
+- Training/consulting
+- Enterprise support
+
+Contact: [Your contact info]
+
+---
+
+**Didn't find your answer?**  
+Ask in [Discussions](https://github.com/AIPMAndy/copyflow/discussions) - the community is here to help! 🙌

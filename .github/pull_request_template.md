@@ -1,33 +1,34 @@
-## 描述
-<!-- 简述这个 PR 解决的问题 -->
+## 📝 Description
 
-## 变更类型
-- [ ] Bug 修复
-- [ ] 新功能
-- [ ] 破坏性修改
-- [ ] 文档更新
-- [ ] 重构
-- [ ] CI/CD 更新
+<!-- Provide a brief description of what this PR does -->
 
-## 检查清单
+## 🎯 Type of Change
 
-### 代码质量
-- [ ] 代码已格式化 (`make format`)
-- [ ] Lint 通过 (`make lint`)
-- [ ] 无安全问题 (`make security`)
-- [ ] 新代码有测试覆盖
+- [ ] 🐛 Bug fix (non-breaking change which fixes an issue)
+- [ ] ✨ New feature (non-breaking change which adds functionality)
+- [ ] 💥 Breaking change (fix or feature that would cause existing functionality to not work as expected)
+- [ ] 📚 Documentation update
+- [ ] 🎨 Code style/refactoring (no functional changes)
+- [ ] ⚡ Performance improvement
+- [ ] ✅ Test addition/update
 
-### 功能验证
-- [ ] 本地测试通过 (`make test`)
-- [ ] 手动验证（如适用）
+## 🔗 Related Issues
 
-### 提交规范
-- [ ] 提交信息清晰
-- [ ] 无机密信息泄露
-- [ ] 文档已更新（如需要）
+<!-- Link to related issues (e.g., Fixes #123) -->
 
-## 相关 Issue
-<!-- 关联的 Issue: #123 -->
+## 🧪 Testing
 
-## 截图/日志
-<!-- 如有 UI 变更或错误修复，添加截图或日志 -->
+- [ ] Tested locally with Python 3.10+
+- [ ] Added/updated tests
+- [ ] All tests pass
+
+## 📋 Checklist
+
+- [ ] Code follows project style (ran `make lint`)
+- [ ] Self-reviewed code
+- [ ] Updated documentation
+- [ ] No new warnings
+
+## 💡 Additional Notes
+
+<!-- Add any additional context -->

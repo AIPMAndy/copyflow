@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  copyflow:
+    build: .
+    container_name: copyflow
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - PONYFLASH_API_KEY=${PONYFLASH_API_KEY}
+    volumes:
+      - ./output:/app/output
+      - ./data:/app/data
+      - ./styles:/app/styles
+    command: python copyflow.py run --topic "${TOPIC:-AI Content Creation}" --count ${COUNT:-5}
+    restart: "no"
