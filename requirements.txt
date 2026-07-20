@@ -2,7 +2,7 @@
 
 # 核心依赖
 click>=8.4.2
-openai>=2.44.0
+openai>=2.46.0
 ponyflash>=0.2.2
 requests>=2.34.2
 
