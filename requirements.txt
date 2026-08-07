@@ -7,7 +7,7 @@ ponyflash>=0.2.2
 requests>=2.34.2
 
 # 可选依赖
-playwright>=1.61.0
+playwright>=1.62.0
 
 # 开发依赖
 pytest>=7.0.0
