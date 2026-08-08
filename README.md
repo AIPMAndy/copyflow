@@ -6,9 +6,10 @@
 
 **为内容运营团队设计**：省下 80% 重复劳动，专注创意和策略
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](./LICENSE)
+[![License](https://img.shields.io/badge/License-PostSkill%201.0.0-blue.svg)](./LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)](https://www.python.org/downloads/)
 [![CI](https://img.shields.io/github/actions/workflow/status/AIPMAndy/copyflow/ci.yml?branch=main&label=CI)](https://github.com/AIPMAndy/copyflow/actions)
+[![codecov](https://codecov.io/gh/AIPMAndy/copyflow/branch/main/graph/badge.svg)](https://codecov.io/gh/AIPMAndy/copyflow)
 
 **简体中文** | [English](./README_EN.md)
 
@@ -293,7 +294,17 @@ copyflow/
 
 ## 📄 License
 
-Apache-2.0
+PostSkill License 1.0.0 (基于 Apache 2.0 改进)
+
+**关于 PostSkill**: CopyFlow 是 [PostSkill](https://github.com/AIPMAndy/postskill) 内容生产工具链的核心组件之一。PostSkill 致力于构建完整的 AI 驱动内容生产解决方案。
+
+**许可证要点**:
+- ✅ 个人和企业内部使用完全免费
+- ✅ 可自由修改以满足自身需求
+- ⚠️ 未经授权禁止提供 SaaS 服务
+- ⚠️ 必须保留 PostSkill 品牌标识
+
+详见 [LICENSE](./LICENSE) 文件
 
 ---
 
