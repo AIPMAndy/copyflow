@@ -6,9 +6,10 @@
 
 **Designed for Content Operations Teams**: Save 80% repetitive work, focus on creativity and strategy
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](./LICENSE)
+[![License](https://img.shields.io/badge/License-PostSkill%201.0.0-blue.svg)](./LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)](https://www.python.org/downloads/)
 [![CI](https://img.shields.io/github/actions/workflow/status/AIPMAndy/copyflow/ci.yml?branch=main&label=CI)](https://github.com/AIPMAndy/copyflow/actions)
+[![codecov](https://codecov.io/gh/AIPMAndy/copyflow/branch/main/graph/badge.svg)](https://codecov.io/gh/AIPMAndy/copyflow)
 
 [简体中文](./README.md) | **English**
 
@@ -266,7 +267,17 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 ## 📄 License
 
-Apache-2.0
+PostSkill License 1.0.0 (based on Apache 2.0 with improvements)
+
+**About PostSkill**: CopyFlow is a core component of the [PostSkill](https://github.com/AIPMAndy/postskill) content production toolchain. PostSkill is dedicated to building complete AI-driven content production solutions.
+
+**License Highlights**:
+- ✅ Free for personal and internal enterprise use
+- ✅ Free to modify for your own needs
+- ⚠️ SaaS services prohibited without authorization
+- ⚠️ Must retain PostSkill brand identifiers
+
+See [LICENSE](./LICENSE) for details
 
 ---
 

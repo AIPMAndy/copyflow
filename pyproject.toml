@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "AI-powered social media content generator"
 readme = "README.md"
 requires-python = ">=3.10"
-license = {text = "MIT"}
+license = {text = "PostSkill License 1.0.0"}
 authors = [
     {name = "AIPMAndy"}
 ]
