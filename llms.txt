@@ -1,0 +1,46 @@
+# CopyFlow - 内容生产自动化引擎
+
+> 🚀 Content Production Automation Engine - One topic → 10 styles of copy + AI images + ready-to-publish materials in 3 minutes. Save 80% repetitive work.
+
+- 作者：AI酋长Andy（AIPMAndy），官网 https://metaver.vip/
+- 开源仓库：https://github.com/AIPMAndy/copyflow
+- 在线地址：https://github.com/AIPMAndy/copyflow
+- 语言：中文（zh-CN）
+- 最近更新：2026-11-26
+
+## 这是什么
+
+bash
+python copyflow.py run --topic "AI 如何改变内容创作"
+真实案例：查看完整输出示例./examples/ai-awakening-output.md
+
+## 内容目录
+
+- 解决什么问题
+- 效率对比
+- 核心能力
+- 快速开始
+- 真实案例
+- 适合谁
+- 项目结构
+- Roadmap
+- 贡献
+- 为什么选择 CopyFlow
+- License
+- 如果这个项目对你有帮助
+- 作者 / About the author
+
+## 关键事实
+
+- 名称：CopyFlow - 内容生产自动化引擎
+- 类型：中文开源项目
+- 语言：中文
+- 最近更新：2026-11-26
+- 仓库：https://github.com/AIPMAndy/copyflow
+
+## 相关链接
+
+- [作者官网](https://metaver.vip/)
+- [GitHub 主页](https://github.com/AIPMAndy/AIPMAndy)
+- [开源总目录](https://aipmandy.github.io/)
+- [机器可读摘要](https://github.com/AIPMAndy/copyflow/blob/main/llms.txt)
